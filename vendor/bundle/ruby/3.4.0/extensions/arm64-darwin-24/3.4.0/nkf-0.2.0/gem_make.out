@@ -1,0 +1,18 @@
+current directory: /Volumes/Amit/Projects/Apps/iScan/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+/opt/homebrew/opt/ruby/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /Volumes/Amit/Projects/Apps/iScan/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250713-45465-ohskbb sitelibdir\=./.gem.20250713-45465-ohskbb clean
+
+current directory: /Volumes/Amit/Projects/Apps/iScan/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250713-45465-ohskbb sitelibdir\=./.gem.20250713-45465-ohskbb
+compiling nkf.c
+linking shared-object nkf.bundle
+
+current directory: /Volumes/Amit/Projects/Apps/iScan/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250713-45465-ohskbb sitelibdir\=./.gem.20250713-45465-ohskbb install
+/usr/bin/install -c -m 0755 nkf.bundle ./.gem.20250713-45465-ohskbb
+
+current directory: /Volumes/Amit/Projects/Apps/iScan/vendor/bundle/ruby/3.4.0/gems/nkf-0.2.0/ext/nkf
+make DESTDIR\= sitearchdir\=./.gem.20250713-45465-ohskbb sitelibdir\=./.gem.20250713-45465-ohskbb clean

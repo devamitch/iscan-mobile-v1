@@ -1,0 +1,165 @@
+{
+	"env": {
+		"jest/globals": true,
+		"browser": true,
+		"node": true,
+		"es2021": true,
+		"react-native/react-native": true
+	},
+	"extends": [
+		"@react-native-community",
+		"plugin:react/jsx-runtime",
+		"plugin:prettier/recommended",
+		"plugin:react-hooks/recommended",
+		"plugin:react-native/all",
+		"plugin:jest/recommended"
+	],
+	"parser": "@typescript-eslint/parser",
+	"parserOptions": {
+		"project": "./tsconfig.json",
+		"ecmaFeatures": {
+			"jsx": true
+		},
+		"ecmaVersion": "latest",
+		"sourceType": "module"
+	},
+	"plugins": [
+		"jest",
+		"import",
+		"no-loops",
+		"react",
+		"react-native",
+		"eslint-plugin-no-inline-styles",
+		"@typescript-eslint",
+		"simple-import-sort",
+		"prettier",
+		"sort-keys-fix",
+		"sort-keys",
+		"import-newlines",
+		"unused-imports"
+	],
+	"root": true,
+	"rules": {
+		"@typescript-eslint/consistent-type-imports": "off",
+		"@typescript-eslint/dot-notation": "warn",
+		"@typescript-eslint/no-empty-interface": ["error", { "allowSingleExtends": false }],
+		"@typescript-eslint/no-explicit-any": "error",
+		"@typescript-eslint/no-misused-new": "error",
+		"@typescript-eslint/no-misused-promises": [
+			"warn",
+			{ "checksSpreads": false, "checksVoidReturn": false }
+		],
+		"@typescript-eslint/no-throw-literal": "warn",
+		"@typescript-eslint/no-unused-modules": 0,
+		"no-unused-vars": "off", // or "@typescript-eslint/no-unused-vars": "off",
+		"unused-imports/no-unused-imports": "error",
+		"unused-imports/no-unused-vars": [
+			"warn",
+			{
+				"vars": "all",
+				"varsIgnorePattern": "^_",
+				"args": "after-used",
+				"argsIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/no-unused-vars": [
+			"error",
+			{
+				"vars": "local",
+				"args": "after-used",
+				"ignoreRestSiblings": false,
+				"destructuredArrayIgnorePattern": "^_"
+			}
+		],
+		"@typescript-eslint/promise-function-async": "warn",
+		"@typescript-eslint/require-array-sort-compare": "warn",
+		"@typescript-eslint/restrict-plus-operands": "warn",
+		"@typescript-eslint/restrict-template-expressions": "warn",
+		"@typescript-eslint/return-await": "warn",
+		"@typescript-eslint/switch-exhaustiveness-check": "warn",
+		"array-bracket-spacing": ["error", "never"],
+		"bracketSameLine": 0,
+		"bracketSpacing": 0,
+		"import/no-duplicates": ["error", { "considerQueryString": true }],
+		"import/no-unused-modules": "off",
+		"jsxSingleQuote": 0,
+		// "linebreak-style": ["error", "unix"],
+		"newline-after-var": ["error", "always"],
+		"newline-before-return": "error",
+		"no-console": ["error", { "allow": ["warn", "error"] }],
+		"no-const-assign": "error",
+		"no-empty": "warn",
+		"no-inline-styles/no-inline-styles": 2,
+		"no-loops/no-loops": 2,
+		"no-mixed-spaces-and-tabs": ["error", "smart-tabs"],
+		"no-restricted-syntax": [
+			"error",
+			{
+				"selector": "TSEnumDeclaration:not([const=true])",
+				"message": "Don't declare non-const enums"
+			}
+		],
+		"no-return-await": "off",
+		"no-throw-literal": "off",
+		"no-warning-comments": [
+			"error",
+			{
+				"terms": ["todo", "fixme", "eslint-disable"],
+				"location": "anywhere"
+			}
+		],
+		"object-curly-spacing": ["error", "always"],
+		"padding-line-between-statements": [
+			"error",
+			{ "blankLine": "always", "prev": ["const"], "next": "*" },
+			{ "blankLine": "any", "prev": "directive", "next": "directive" },
+			{ "blankLine": "always", "prev": "*", "next": "return" }
+		],
+		"prefer-const": "error",
+		"react-hooks/exhaustive-deps": "error",
+		"react-native/no-color-literals": 2,
+		"react-native/no-inline-styles": 2,
+		"react-native/no-raw-text": "error",
+		"react-native/no-single-element-style-arrays": 2,
+		"react-native/no-unused-styles": "error",
+		"react-native/split-platform-components": 2,
+		"react/jsx-closing-tag-location": "off",
+		"react/jsx-filename-extension": ["error", { "extensions": [".jsx", ".tsx"] }],
+		"react/jsx-one-expression-per-line": ["error", { "allow": "single-child" }],
+		"react/jsx-props-no-spreading": [
+			"warn",
+			{
+				"html": "ignore",
+				"custom": "ignore",
+				"explicitSpread": "ignore",
+				"exceptions": ["string"]
+			}
+		],
+		"react/sort-prop-types": ["error"],
+		"semi": 1,
+		"simple-import-sort/exports": "error",
+		"simple-import-sort/imports": [
+			"error",
+			{
+				"groups": [
+					["^\\u0000"],
+					["^react", "^@?\\w"],
+					["^\\.\\.(?!/?$)", "^\\.\\./?$"],
+					["^\\./(?=.*/)(?!/?$)", "^\\.(?!/?$)", "^\\./?$"]
+				]
+			}
+		],
+		"yoda": ["error", "never", { "onlyEquality": true }]
+	},
+	"settings": {
+		"import/parsers": {
+			"@typescript-eslint/parser": [".ts", ".tsx"]
+		},
+		"import/resolver": {
+			"node": {
+				"extensions": [".js", ".jsx", ".ts", ".tsx", ".d.ts"],
+				"moduleDirectory": ["node_modules", "src/"]
+			}
+		}
+	}
+}
